@@ -12,7 +12,7 @@ Thymeleaf is a Java Template Framework which your are going to use primarely for
           href="../../static/css/styles.css"
           th:href="@{css/styles.css}"/>
 ````   
-This assumes that you will put the styles sheet (e.g styels.css) file in the folder:  **resources -> css**
+This assumes that you will put the styles sheet (e.g styels.css) file in the folder:  **resources -> static -> css**
 
 
 ## Variables
