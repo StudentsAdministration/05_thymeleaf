@@ -31,7 +31,7 @@ When you get a list (e.g Arraylist) you need to "loop it" in order to get a spec
 This you can add to a html tag like this
 
 ````html
-      <tr> th:each="student: ${stu}">
+      <tr th:each="student: ${stu}">
             <td th:text="${student.getFirstName()}">
       </tr>
 ````   
