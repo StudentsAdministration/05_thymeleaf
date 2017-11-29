@@ -2,7 +2,7 @@
 Thymeleaf examples and literature used this semester
 
 ## Pourpouse of Thymeleaf
-Thymeleaf is a scripting language which your are going to use primary for handeling the data transfered from the controller or the data transfered from the view to the controler. 
+Thymeleaf is a Java Template Framework which your are going to use primarely for handeling the data transfered from the controller or the data transfered from the view to the controler. 
 
 
 ## Adding external stylesheet
