@@ -30,11 +30,15 @@ Thymeleaf tag are also attributes and all follow the pattern:
 
 
 ````      
-
       
       th:text="${nameOfVariable}"
-      
-      <!-- An example -->
+     
+     
+````     
+
+````    
+
+      <!-- An example -->
       <tr>
             <td th:text="${student.name}"></td>
       </tr>
