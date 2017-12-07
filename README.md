@@ -9,7 +9,7 @@ Thymeleaf works by adding an attribute to the html tags in your document. From t
 
 Examples of that is:
 
-´´´´html   
+´´´´   
 
       <img src="image.png" alt="picture" /> 
       
@@ -25,7 +25,7 @@ Examples of that is:
 ````   
 Thymeleaf tag are also attributes and all follow the pattern:
 
-````html    
+````    
       
       th:text="${nameOfVariable}"
       
