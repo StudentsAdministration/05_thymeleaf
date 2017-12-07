@@ -9,7 +9,8 @@ Thymeleaf works by adding an attribute to the html tags in your document. From t
 
 Examples of that is:
 
-´´´´html 
+´´´´html   
+
       <img src="image.png" alt="picture" /> 
       
       <!-- Where src and alt are attributes --> 
