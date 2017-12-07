@@ -21,6 +21,7 @@ Examples of that is:
       </tr>
       
       <!-- Where id is an attribute -->
+      
 ````    
 
 Thymeleaf tag are also attributes and all follow the pattern: 
