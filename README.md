@@ -39,14 +39,25 @@ A variable from the Model (added by ````model.addAttribute("student", new Studen
 ````    
 
 ````    
-      <p th:text="${student.getName()}" />
+      <p th:text="${student.name}" />
 ````    
+We can and will also use another way of accessing the object and its members. When using a HTML form we can like this:
 
+````    
+     <form th:action="@{/create}" method="post" th:object="${student}">
+            <input type="text" th:field="*{name}" />
+            <input type="submit" value="Create" />
+     </form>
+````    
+So the \*{name} access the name variable of the ${student} object.    
+The @ in  ````th:action="@{/create}"```` is used for pointing out links or urls.
+
+The documentation can be found here:    
 * [Standard URL Syntax](http://www.thymeleaf.org/doc/articles/standardurlsyntax.html)
 
 
 ## loop
-When you get a list (e.g Arraylist) you need to "loop it" in order to get a specific entity. A loop  look like this
+When you get a list (e.g Arraylist) you need to "loop it" in order to get a specific entity. A loop looks like this
 ````html
       th:each="student: ${stu}"
 ````    
@@ -57,6 +68,7 @@ This you can add to a html tag like this
             <td th:text="${student.getFirstName()}">
       </tr>
 ````   
+<!--
 ## Thymeleaf Layout
 You can "compose" a page of several elements. A main html page that includes a menu etc.
 
@@ -70,3 +82,4 @@ You can "compose" a page of several elements. A main html page that includes a m
       <!-- from "fragments/header.html" at runtime.                                     -->
       <!-- ============================================================================ -->
 ````    
+-->
