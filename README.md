@@ -5,35 +5,24 @@ Thymeleaf examples and literature used this semester
 Thymeleaf is a Java Template Framework which your are going to use primarely for handeling the data transfered from the controller or the data transfered from the view to the controler. 
 
 ## The th: tag
-Thymeleaf works by adding an attribute to the html tags in your document. From the classes dealing with HTML and Css you know that html tags can have [attributes](https://www.w3schools.com/html/html_attributes.asp). 
+Thymeleaf works by adding an attribute to the html tags in your document. From the teachings about HTML and Css you know that html tags can have [attributes](https://www.w3schools.com/html/html_attributes.asp). 
 
 Thymeleaf tags all follow the pattern: 
 
-
-````      
-      
+````        
       th:text="${nameOfVariable}"
-     
 ````     
 An example of that is
 
 ````    
-      
       <tr>
             <td th:text="${student.name}"></td>
       </tr>
-````     
-
-            
+````         
 or  
-      
-````     
-      
+````      
       <input type="text" th:field="${student.name}" />
-      
 ````     
-
-
 ## Adding external stylesheet
 
 ````html    
