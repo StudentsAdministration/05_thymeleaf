@@ -52,9 +52,19 @@ We can and will also use another way of accessing the object and its members. Wh
 So the \*{name} access the name variable of the ${student} object.    
 The @ in  ````th:action="@{/create}"```` is used for pointing out links or urls.
 
-The documentation can be found here:    
-* [Standard URL Syntax](http://www.thymeleaf.org/doc/articles/standardurlsyntax.html)
+### Links with an id
+Wy will need the functionality of sending a variable via the url like:
 
+````    
+      http://localhost:8080/update?id=3
+````   
+For this we will use the folowing syntax    
+
+````    
+      th:href="@{/update(id=${student.studentId})}"
+````    
+The documentation can be found here:    
+* [Standard URL Syntax](http://www.thymeleaf.org/doc/articles/standardurlsyntax.html)    
 
 ## loop
 When you get a list (e.g Arraylist) you need to "loop it" in order to get a specific entity. A loop looks like this
