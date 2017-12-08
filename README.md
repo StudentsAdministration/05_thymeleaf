@@ -26,15 +26,13 @@ or
 ## Adding external stylesheet
 
 ````html    
-      <link rel="stylesheet" type="text/css"
-          href="../../static/css/styles.css"
-          th:href="@{css/styles.css}"/>
+      <link rel="stylesheet" type="text/css" th:href="@{css/styles.css}"/>
 ````   
 This assumes that you will put the styles sheet (e.g styels.css) file in the folder:  **resources -> static -> css**
 
 
 ## Variables
-A variable from the Model can be accessed like this 
+A variable from the Model (added by ````model.addAttribute()```` in the controller) can be accessed like this 
 
 ````    
      ${objectname.variable} 
