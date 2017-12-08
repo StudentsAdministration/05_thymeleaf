@@ -32,14 +32,14 @@ This assumes that you will put the styles sheet (e.g styels.css) file in the fol
 
 
 ## Variables
-A variable from the Model (added by ````model.addAttribute()```` in the controller) can be accessed like this 
+A variable from the Model (added by ````model.addAttribute("student", new Student())```` in the controller) can be accessed like this 
 
 ````    
-     ${objectname.variable} 
+     ${object.method()} 
 ````    
 
 ````    
-      <p th:text="${student.name}" />
+      <p th:text="${student.getName()}" />
 ````    
 
 * [Standard URL Syntax](http://www.thymeleaf.org/doc/articles/standardurlsyntax.html)
