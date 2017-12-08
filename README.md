@@ -67,19 +67,4 @@ This you can add to a html tag like this
       <tr th:each="student: ${stu}">
             <td th:text="${student.getFirstName()}">
       </tr>
-````   
-<!--
-## Thymeleaf Layout
-You can "compose" a page of several elements. A main html page that includes a menu etc.
--->
-<!-- [Thymeleaf Standard Layout System](http://www.thymeleaf.org/doc/articles/layouts.html) -->
-<!--
-````html    
-      <div th:replace="fragments/header :: header" />
-      <!-- ============================================================================ -->
-      <!-- This content is only used for static prototyping purposes (natural templates)-->
-      <!-- and is therefore entirely optional, as this markup fragment will be included -->
-      <!-- from "fragments/header.html" at runtime.                                     -->
-      <!-- ============================================================================ -->
 ````    
--->
