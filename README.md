@@ -71,9 +71,9 @@ This you can add to a html tag like this
 <!--
 ## Thymeleaf Layout
 You can "compose" a page of several elements. A main html page that includes a menu etc.
-
-[Thymeleaf Standard Layout System](http://www.thymeleaf.org/doc/articles/layouts.html)
-
+-->
+<!-- [Thymeleaf Standard Layout System](http://www.thymeleaf.org/doc/articles/layouts.html) -->
+<!--
 ````html    
       <div th:replace="fragments/header :: header" />
       <!-- ============================================================================ -->
