@@ -78,3 +78,7 @@ This you can add to a html tag like this
             <td th:text="${student.getFirstName()}">
       </tr>
 ````    
+
+
+
+_<div align="right">&copy; clbo@kea.dk</div>_
